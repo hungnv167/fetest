@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="group-title">
+      <p class="title">TWO-PIZZA TEAM </p>
+      <p class="title">WITH KYANON DIGITAL</p>
+    </div>
+    <div class="contact">
+      <div class="row d-flex justify-content-between align-items-center">
+          <div class="contact-left col col-xl-5">
+            <img src="https://kyanon.digital/the-two-pizza-team/assets/images/build-your-kickass.png" alt="#">
+          </div>
+          <div class="contact-right col col-xl-7">
+              <h1>HIEN PHAN (Ms)</h1>
+              <p>REGIONAL BUSINESS DIRECTOR</p>
+              <div class="div-contact">
+                <div class="line-img">
+                  <img src="https://kyanon.digital/the-two-pizza-team/assets/images/mail-ic.png" alt="#">
+                  <a href="hien.phan@kyanon.digital">Hien.phan@kyanon.digital</a>
+                </div>
+                <div class="line-img">
+                    <img src="https://kyanon.digital/the-two-pizza-team/assets/images/loca-ic.png" alt="#">
+                  <p>Singapore: WeWork Beach Centre, 15 Beach Rd, #02-01 Singapore 189677
+                      Vietnam: 294-296 Truong Sa, Ward 2, Phu Nhuan District, HCMC, Vietnam</p>
+                  </div>
+                  <div class="line-img">
+                      <img src="https://kyanon.digital/the-two-pizza-team/assets/images/link-ic.png" alt="#">
+                      <p>Website: kyanon.digital/the-two-pizza-team</p>
+                  </div>
+              </div>
+              <button (click)="openModalWithClass(template)">CONTACT US</button>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="bottom d-flex justify-content-between align-items-center">
+        <p>© 2019 Kyanon Digital. All rights reserved.</p>
+        <p>Privacy Policy</p>
+    </div>
+    <ng-template #template>
+        <div class="form-contact">
+          <div class="hide">
+            <button (click)="modalRef.hide()"><img src="https://kyanon.digital/the-two-pizza-team/assets/images/close.png" alt="#"></button>
+          </div>
+          <div class="us">MEET US</div>
+          <div class="group-contact">
+            <div class="img-left">
+              <img src="https://kyanon.digital/the-two-pizza-team/assets/images/popup-info.png" alt="#">
+            </div>
+            <div class="form-right">
+              <form class="form-send" action="#">
+                <input type="text" placeholder="Your name...">
+                <input type="text" placeholder="Your email...">
+                <input type="text" placeholder="Your phone...">
+                <input type="text" placeholder="Your message...">
+                <button class="medal-send">SEND</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </ng-template>
+
